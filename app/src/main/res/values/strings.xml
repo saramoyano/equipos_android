@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Gestión Equipos Informáticos</string>
+    <string name="title_activity_listado_equipos">Listado Equipos</string>
+    <string name="title_activity_alta_equipo">Alta Equipo</string>
+
+    <string name="menu_Equipos">Equipos</string>
+    <string name="menu_ListadoEquipos">Listado</string>
+    <string name="menu_NuevoEquipoConID">Nuevo (con ID)</string>
+    <string name="menu_NuevoEquipoSinID">Nuevo (sin ID)</string>
+    <string name="menu_Salir">Salir</string>
+    <string name="menu_EliminarEquipo">Eliminar</string>
+    <string name="menu_EliminarTodos">Eliminar Todos</string>
+
+    <string name="msg_Salir">¿Desea salir?</string>
+    <string name="msg_Confirmacion">¿Está seguro?</string>
+    <string name="msg_AltaEquipoOK">Alta de Equipo correcta.</string>
+    <string name="msg_AltaEquipoKO">Alta de Equipo incorrecta!!</string>
+    <string name="msg_BajaEquipoOK">Baja de Equipo correcta.</string>
+    <string name="msg_BajaEquipoKO">Baja de Equipo incorrecta!!</string>
+    <string name="msg_FaltanDatosObligatorios">Faltan Datos Obligatorios!!</string>
+
+    <string name="msg_Error1">No Activity!!</string>
+    <string name="msg_Error2">No Data!!</string>
+    <string name="msg_Error3">No Feature!!</string>
+    <string name="msg_Chooser">¿Escoge una app?</string>
+
+    <string name="msg_Text_Id">ID.: %1$s</string>
+    <string name="msg_Text_Fecha">FECHA: %1$s</string>
+    <string name="msg_Text_Loc">LOC.: %1$s</string>
+    <string name="msg_Text_Modelo">MODELO: %1$s</string>
+    <string name="msg_EnUsoSi">En uso: si</string>
+    <string name="msg_EnUsoNo">En uso: no</string>
+
+    <string name="tv_Id">ID:</string>
+    <string name="tv_Fecha">Fecha:</string>
+    <string name="tv_Loc">Loc.:</string>
+    <string name="tv_Modelo">Modelo:</string>
+    <string name="tv_EnUso">En uso:</string>
+    <string name="tv_Foto">Foto:</string>
+    <string name="iv_Foto_ContentD">Foto</string>
+    <string name="bt_Fecha">&#8230;</string>
+    <string name="rb_Taller1">Taller1</string>
+    <string name="rb_Taller2">Taller2</string>
+    <string name="rb_Dpto">Dpto</string>
+
+    <string name="bt_OK">OK</string>
+    <string name="bt_KO">KO</string>
+    <string name="bt_SI">Si</string>
+    <string name="bt_NO">No</string>
+    <string name="bt_Aceptar">Aceptar</string>
+    <string name="bt_Cancelar">Cancelar</string>
+    <string name="bt_Salir">Salir</string>
+
+    <string-array name="locs_equipos_array">
+        <item>Taller1</item>
+        <item>Taller2</item>
+        <item>Dpto</item>
+    </string-array>
+
+    <string-array name="modelos_equipos_array">
+        <item></item>
+        <item>HP</item>
+        <item>LENOVO</item>
+        <item>APD</item>
+        <item>INVES</item>
+    </string-array>
+
+</resources>

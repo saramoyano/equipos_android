@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dam.ex1aev1prec.vista.MainActivity">
+
+    <item
+        android:id="@+id/menuEquipos"
+        android:title="@string/menu_Equipos" >
+        <menu >
+            <item
+                android:id="@+id/menuNuevoEquipoConID"
+                android:icon="@android:drawable/btn_star_big_on"
+                android:orderInCategory="11"
+                android:title="@string/menu_NuevoEquipoConID"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menuNuevoEquipoSinID"
+                android:icon="@android:drawable/btn_star"
+                android:orderInCategory="12"
+                android:title="@string/menu_NuevoEquipoSinID"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menuListadoEquipos"
+        android:orderInCategory="20"
+        android:title="@string/menu_ListadoEquipos"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuSalir"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:orderInCategory="200"
+        android:title="@string/menu_Salir"
+        app:showAsAction="ifRoom" />
+
+</menu>

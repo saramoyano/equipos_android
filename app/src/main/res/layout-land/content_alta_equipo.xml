@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".vista.AltaEquipoActivity"
+    tools:showIn="@layout/activity_alta_equipo">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glineAltaEquipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tv_Id"
+        app:layout_constraintEnd_toStartOf="@+id/glineAltaEquipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="474dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textNoSuggestions|text"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/glineAltaEquipo" />
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tv_Fecha"
+        app:layout_constraintEnd_toStartOf="@+id/glineAltaEquipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvId" />
+
+    <EditText
+        android:id="@+id/etFecha"
+        android:layout_width="344dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:importantForAutofill="no"
+        android:inputType="textNoSuggestions|text"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvFecha"
+        app:layout_constraintStart_toStartOf="@+id/glineAltaEquipo" />
+
+    <Button
+        android:id="@+id/btFecha"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/bt_Fecha"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etFecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etFecha" />
+
+    <TextView
+        android:id="@+id/tvLoc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tv_Loc"
+        app:layout_constraintEnd_toStartOf="@id/glineAltaEquipo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFecha" />
+
+    <RadioGroup
+        android:id="@+id/rgLoc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:checkedButton="@id/rbDpto"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/glineAltaEquipo"
+        app:layout_constraintTop_toTopOf="@+id/tvLoc">
+
+        <RadioButton
+            android:id="@+id/rbTaller1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rb_Taller1" />
+
+        <RadioButton
+            android:id="@+id/rbTaller2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rb_Taller2" />
+
+        <RadioButton
+            android:id="@+id/rbDpto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rb_Dpto" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvModelo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tv_Modelo"
+        app:layout_constraintEnd_toStartOf="@+id/glineAltaEquipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLoc" />
+
+    <Spinner
+        android:id="@+id/spModelo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvModelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/glineAltaEquipo"
+        app:layout_constraintTop_toTopOf="@+id/tvModelo" />
+
+    <TextView
+        android:id="@+id/tvEnUso"
+        android:layout_width="101dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tv_EnUso"
+        app:layout_constraintEnd_toStartOf="@+id/glineAltaEquipo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvModelo" />
+
+    <Button
+        android:id="@+id/btCancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/bt_Cancelar"
+        app:layout_constraintEnd_toStartOf="@+id/btAceptar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFoto" />
+
+    <Button
+        android:id="@+id/btAceptar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/bt_Aceptar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btCancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btCancelar" />
+
+    <TextView
+        android:id="@+id/tvFoto"
+        android:layout_width="68dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/iv_Foto_ContentD"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvEnUso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="@+id/glineAltaEquipo" />
+
+    <ImageView
+        android:id="@+id/ivFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/glineAltaEquipo"
+        app:layout_constraintTop_toTopOf="@+id/tvFoto"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <CheckBox
+        android:id="@+id/cbEnUso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@android:dimen/notification_large_icon_height"
+        app:layout_constraintEnd_toStartOf="@+id/glineAltaEquipo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvModelo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
